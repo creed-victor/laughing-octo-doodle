@@ -1,0 +1,8 @@
+{
+  "mainnet": {
+    "Multisig": {
+      "address": "0x924f5Ad34698fD20C90fe5d5a8A0ABD3b42dC711",
+      "startBlock": 6199141
+    }
+  }
+}

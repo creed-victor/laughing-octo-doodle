@@ -1,0 +1,74 @@
+type Confirmation @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  transactionId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Revocation @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  transactionId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Submission @entity(immutable: true) {
+  id: Bytes!
+  transactionId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Execution @entity(immutable: true) {
+  id: Bytes!
+  transactionId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ExecutionFailure @entity(immutable: true) {
+  id: Bytes!
+  transactionId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Deposit @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  value: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type OwnerAddition @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type OwnerRemoval @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RequirementChange @entity(immutable: true) {
+  id: Bytes!
+  required: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
